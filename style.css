@@ -1,0 +1,104 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #FFFDF4;
+}
+
+header {
+    background-color: #FFFDF4;
+    padding: 1em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #000000
+}
+
+header img {
+    max-width: 100px;
+    max-height: 50px;
+}
+
+.header-text {
+    color: rgb(0, 0, 0); /* Text color */
+    margin-left: 10px; /* Adjust as needed for spacing */
+    font-size: 18px; /* Adjust as needed for font size */
+}
+
+.signin-button {
+    background-color: #C9DCF8; /* White color by default */
+    color: #000000; /* Blue color for text */
+    border-radius: 0.4rem;
+    padding: 5px 15px;
+    font-size: 16px;
+    border: 2px solid white;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.signin-button:hover {
+    background-color: #5178FB; /* Blue color on hover */
+    color: white; /* White color for text on hover */
+    border-color: #3975a6
+}
+
+.custom-cursor {
+    width: 20px;
+    height: 20px;
+    border: 2px solid #32723c; /* Blue color */
+    border-radius: 50%; /* Circular shape */
+    position: absolute;
+    pointer-events: none; /* Make it ignore mouse events */
+    transform: translate(-50%, -50%); /* Center the cursor */
+    transition: transform 0.1s ease-in-out;
+}
+
+.main-content {
+    text-align: center;
+    margin-top: 50px; /* Adjust as needed for spacing */
+}
+
+.main-content img {
+    max-width: 250px;
+    max-height: 125px;
+    display: block;
+    margin: 0 auto;
+}
+
+.description {
+    font-size: 16px;
+    color: #333; /* Adjust as needed for text color */
+    margin: 20px 0;
+    
+}
+
+.search-bar {
+    display: flex;
+    justify-content: center;
+    align-items: left;
+}
+
+.search-bar input {
+    /* border-radius: 0.4rem;
+    padding: 10px 90px;
+    font-size: 16px;
+    border: 1px solid rgb(0, 0, 0); /* Adjust as needed for border color */
+    /* margin-right: 0px; /* Add margin to push the input to the left */
+    /* text-align: left; */
+    padding: 5px 90px;
+    font-size: 16px;
+    border: 1px solid #333; /* Adjust as needed for border color */
+    margin-right: 10px; /* Add margin to push the input to the left */
+    text-align: left; 
+}
+
+.search-bar button {
+    border-radius: 0.4rem;
+    padding: 10px 15px;
+    font-size: 16px;
+    background-color: #5178FB; /* Adjust as needed for button color */
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin-left: 10px; /* Adjust as needed for spacing */
+}
