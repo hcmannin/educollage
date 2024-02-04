@@ -4,7 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Edu-College</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap">
 </head>
 <body>
     <header>
@@ -14,13 +16,57 @@
     </header>
     <div class="main-content">
         <img src="Logo.png" alt="Logo">
-        <p class="description">Dive into a wealth of resources loved by past students!</p>
+        <h1 class="description">Dive into a wealth of resources loved by past students!</h1>
         <div class="search-bar">
-            <input type="text" placeholder="What is the Institution Name?">
-            <button>Search</button>
+            <a href="#"><i class="fa fa-search icon-search"></i></a>
+            <input type="text" placeholder="Your Schoool"/>
+            <!-- this mores to other class_search.html -->
+            <button onclick="location.href='class_Search.html'">Search</button>
+            <!-- <button>Search</button> -->
         </div>
+        <!-- CONTAINERS -->
+        <div class="step-container">
+
+            <div class="step-box">
+                <img src="brown_bear.png" alt="bear1">
+                <h2>Find your school <br> and class</h2>
+                <p>Navigate and access a tailored list of resources compiled by students who have excelled in the same educational journey.</p>
+            </div>
+
+            <div class="step-box">
+                <img src="white_bear.png" alt="bear2">
+                <h2>Browse and contribute <br>your resources</h2>
+                <p>Contribute to this collective knowledge by sharing your own links or videos, enriching the resource pool for everyone.</p>
+            </div>
+    
+            <div class="step-box">
+                <img src="black_bear.png" alt="bear3">
+                <h2>Optimize your learning <br>experience</h2>
+                <p>Actively participate and contribute, you're not just a user; you're a crucial part of a dynamic learning ecosystem.</p>
+            </div>
+
+        </div>
+        <!-- FOOTERS -->
+        <footer>
+            <div class="footer-content">
+                <p>&copy; 2024 EduCollage. All rights reserved.</p>
+                <ul>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms of Service</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+                <div class="social-icons">
+                    <li><a href="#"><ion-icon name="logo-instagram"></ion-icon></i></a></li>
+                    <li><a href="#"><ion-icon name="logo-facebook"></ion-icon></i></a></li>
+                    <li><a href="#"><ion-icon name="logo-linkedin"></ion-icon></i></a></li>
+                </div>
+            </div>
+        </footer>
+
     </div>
-    <!-- Your content goes here -->
+    <!-- Icons download -->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </body>
 </html>
 
