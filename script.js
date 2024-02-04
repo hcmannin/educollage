@@ -1,4 +1,6 @@
-document.addEventListener('mousemove', (e) => {
-    const cursor = document.querySelector('.custom-cursor');
-    cursor.style.transform = `translate(${e.clientX}px, ${e.clientY}px)`;
+const wrapper = document.querySelector(".search-sec"),
+selectBtn = wrapper.querySelector(".select-btn");
+
+selectBtn.addEventListener("click", () => {
+    wrapper.classList.toggle("active");
 });
