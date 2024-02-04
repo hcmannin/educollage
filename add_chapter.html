@@ -42,7 +42,7 @@
     margin-right: 10px; /* Added right margin */
   }
   .section textarea {
-    width: 90%;
+    width: 85%;
     border: none;
     outline: none;
     resize: none;
@@ -60,7 +60,11 @@
     padding: 5px 10px;
     cursor: pointer;
     border-radius: 3px;
-    margin-right: 5px;
+    /* margin-right: 5px; */
+    margin-left: 10px; /* Added left margin */
+    margin-top: 5px;
+    margin-bottom: 10px;
+    /* margin-right: 5px; Added right margin */
   }
   .link-input {
     margin-top: 5px;
@@ -83,13 +87,16 @@
 </style>
 </head>
 <body>
-<div class="title" id="classTitle">Untitled Class</div>
+<!-- HERE !!!-->
+<div class="title" id="classTitle">CSE 30</div>
+
+<!-- HERE!!! -->
 <div id="container">
   <button id="addSectionButton">Add Unit/Lecture/Chapter</button>
 </div>
 
 <script>
-  var className = "Untitled Class"; // Default class name
+  var className = "CSE 30"; // Default class name
 
   document.getElementById('classTitle').innerText = className;
 

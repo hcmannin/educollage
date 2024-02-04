@@ -142,7 +142,27 @@ header img {
     display: block;
 }
 
+.step-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    padding: 20px;
+}
 
+.step-box {
+    background-color: transparent;
+    padding: 20px;
+    width: 30%;
+    box-sizing: border-box;
+}
+
+h2 {
+    color: #333;
+}
+
+p {
+    color: #666;
+}
 /* FOOTER */
 footer {
     background-color: #C0BDE6;
