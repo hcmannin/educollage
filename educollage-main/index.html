@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EduCollege</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap">
+</head>
+<body>
+    <header>
+        <img src="Logo.png" alt="Logo">
+        <span class="header-text">EduCollage</span>
+        <button class="signin-button" onclick="location.href='#signin'">Sign In</button>
+    </header>
+    <div class="main-content">
+        <img src="Logo.png" alt="Logo">
+        <h1 class="description">
+            Dive into a wealth of resources loved by past students!
+        </h1>
+        
+            <div class="search-bar">
+                <a href="#"><i class="fa fa-search icon-search"></i></a>
+                <input type="text" placeholder="Your School" list="classes" id="searchInput">
+                <datalist id="classes">
+                    <option> UC Santa Cruz </option>
+                    <option> UC Berkeley </option>
+                    <option> UC Riverside </option>
+                    <option> UC Los Angeles </option>
+                    <!-- Add all your other options here -->
+                    <option> Stanford </option>
+                    <option> Boston College </option>
+                    <option> Harvard University </option>
+                </datalist>
+                <!-- this moves to other class_search.html -->
+                <button onclick="location.href='class_Search.html'">Search</button>
+            </div>
+
+        <datalist id="classes">
+            <option> CSE 3 </option>
+            <option> CSE 5J </option>
+            <option> CSE 10 </option>
+            <option> CSE 12 </option>
+            <option> CSE 13S </option>
+            <option> CSE 16 </option>
+            <option> CSE 20 </option>
+            <option> CSE 30 </option>
+            <option> CSE 40 </option>
+            <option> CSE 80A </option>
+            <option> CSE 80L </option>
+            <option> CSE 80N </option>
+            <option> CSE 80S </option>
+            <option> CSE 94 </option>
+            <option> CSE 94F </option>
+            <option> CSE 99 </option>
+            <option> CSE 99F </option>
+            <option> CSE 100 </option>
+            <option> CSE 100L </option>
+            <option> CSE 101 </option>
+            <option> CSE 101M </option>
+            <option> CSE 102 </option>
+            <option> CSE 103 </option>
+            <option> CSE 104 </option>
+            <option> CSE 105 </option>
+            <option> CSE 106 </option>
+            <option> CSE 107 </option>
+            <option> CSE 108 </option>
+            <option> CSE 110A </option>
+            <option> CSE 110B </option>
+            <option> CSE 111 </option>
+            <option> CSE 112 </option>
+            <option> CSE 113 </option>
+            <option> CSE 114A </option>
+            <option> CSE 114B </option>
+            <option> CSE 115A </option>
+            <option> CSE 115B </option>
+            <option> CSE 115C </option>
+            <option> CSE 115D </option>
+            <option> CSE 117 </option>
+            <option> CSE 118 </option>
+            <option> CSE 119 </option>
+            <option> CSE 120 </option>
+            <option> CSE 121 </option>
+            <option> CSE 122 </option>
+            <option> CSE 123A </option>
+            <option> CSE 123B </option>
+            <option> CSE 125 </option>
+            <option> CSE 129A </option>
+            <option> CSE 129B </option>
+            <option> CSE 129C </option>
+            <option> CSE 130 </option>
+            <option> CSE 132 </option>
+            <option> CSE 134 </option>
+            <option> CSE 138 </option>
+            <option> CSE 140 </option>
+            <option> CSE 142 </option>
+            <option> CSE 143 </option>
+            <option> CSE 144 </option>
+            <option> CSE 145 </option>
+            <option> CSE 146 </option>
+            <option> CSE 150 </option>
+            <option> CSE 151 </option>
+            <option> CSE 151L </option>
+            <option> CSE 152 </option>
+            <option> CSE 156 </option>
+            <option> CSE 156L </option>
+            <option> CSE 157 </option>
+            <option> CSE 160 </option>
+            <option> CSE 161 </option>
+            <option> CSE 161L </option>
+            <option> CSE 162 </option>
+            <option> CSE 162L </option>
+            <option> CSE 163 </option>
+            <option> CSE 164 </option>
+            <option> CSE 165 </option>
+            <option> CSE 167 </option>
+            <option> CSE 168 </option>
+            <option> CSE 180 </option>
+            <option> CSE 181 </option>
+            <option> CSE 182 </option>
+            <option> CSE 183 </option>
+            <option> CSE 184 </option>
+            <option> CSE 185E </option>
+            <option> CSE 186 </option>
+            <option> CSE 187 </option>
+            <option> CSE 191 </option>
+            <option> CSE 192 </option>
+            <option> CSE 192F </option>
+            <option> CSE 193 </option>
+            <option> CSE 193F </option>
+            <option> CSE 194 </option>
+            <option> CSE 194F </option>
+            <option> CSE 195 </option>
+            <option> CSE 195F </option>
+            <option> CSE 198 </option>
+            <option> CSE 198F </option>
+            <option> CSE 199 </option>
+            <option> CSE 199F </option>
+            <option> CSE 200 </option>
+            <option> CSE 201 </option>
+            <option> CSE 202 </option>
+            <option> CSE 203 </option>
+            <option> CSE 204 </option>
+            <option> CSE 205 </option>
+            <option> CSE 206C </option>
+            <option> CSE 207 </option>
+            <option> CSE 209A </option>
+            <option> CSE 210A </option>
+            <option> CSE 210B </option>
+            <option> CSE 211 </option>
+            <option> CSE 212A </option>
+            <option> CSE 212B </option>
+            <option> CSE 214 </option>
+            <option> CSE 215 </option>
+            <option> CSE 216 </option>
+            <option> CSE 220 </option>
+            <option> CSE 221 </option>
+            <option> CSE 221L </option>
+            <option> CSE 222A </option>
+            <option> CSE 222B </option>
+            <option> CSE 225 </option>
+            <option> CSE 226 </option>
+            <option> CSE 228A </option>
+            <option> CSE 229 </option>
+            <option> CSE 231 </option>
+            <option> CSE 232 </option>
+            <option> CSE 233 </option>
+            <option> CSE 234 </option>
+            <option> CSE 235 </option>
+            <option> CSE 237 </option>
+            <option> CSE 240 </option>
+            <option> CSE 241 </option>
+            <option> CSE 242 </option>
+            <option> CSE 243 </option>
+            <option> CSE 244A </option>
+            <option> CSE 244B </option>
+            <option> CSE 245 </option>
+            <option> CSE 246 </option>
+            <option> CSE 247 </option>
+            <option> CSE 248 </option>
+            <option> CSE 249 </option>
+            <option> CSE 250A </option>
+            <option> CSE 250B </option>
+            <option> CSE 250C </option>
+            <option> CSE 253 </option>
+            <option> CSE 257 </option>
+            <option> CSE 259 </option>
+            <option> CSE 260 </option>
+            <option> CSE 261 </option>
+            <option> CSE 262 </option>
+            <option> CSE 263 </option>
+            <option> CSE 264 </option>
+            <option> CSE 265 </option>
+            <option> CSE 272 </option>
+            <option> CSE 276 </option>
+            <option> CSE 277 </option>
+            <option> CSE 279 </option>
+            <option> CSE 280A </option>
+            <option> CSE 280D </option>
+            <option> CSE 280F </option>
+            <option> CSE 280G </option>
+            <option> CSE 280H </option>
+            <option> CSE 280I </option>
+            <option> CSE 280J </option>
+            <option> CSE 280K </option>
+            <option> CSE 280L </option>
+            <option> CSE 280M </option>
+            <option> CSE 280N </option>
+            <option> CSE 280O </option>
+            <option> CSE 280P </option>
+            <option> CSE 280S </option>
+            <option> CSE 280T </option>
+            <option> CSE 280V </option>
+            <option> CSE 280X </option>
+            <option> CSE 280Z </option>
+            <option> CSE 285 </option>
+            <option> CSE 290A </option>
+            <option> CSE 290C </option>
+            <option> CSE 290D </option>
+            <option> CSE 290E </option>
+            <option> CSE 290F </option>
+            <option> CSE 290G </option>
+            <option> CSE 290H </option>
+            <option> CSE 290J </option>
+            <option> CSE 290K </option>
+            <option> CSE 290L </option>
+            <option> CSE 290M </option>
+            <option> CSE 290N </option>
+            <option> CSE 290O </option>
+            <option> CSE 290P </option>
+            <option> CSE 290Q </option>
+            <option> CSE 290S </option>
+            <option> CSE 290T </option>
+            <option> CSE 290X </option>
+            <option> CSE 293 </option>
+            <option> CSE 296 </option>
+            <option> CSE 297A </option>
+            <option> CSE 297B </option>
+            <option> CSE 297C </option>
+            <option> CSE 297F </option>
+            <option> CSE 299A </option>
+            <option> CSE 299B </option>
+            <option> CSE 299C </option>
+            <option> CSE 299F </option>
+            <option> CSE 185E </option>
+            <option> ECE 253 </option>
+            <option> ECON 166B </option>
+            <option> ECON 272 </option>
+            <option> PHYS 150 </option>
+            <option> STAT 266A </option>
+            <option> STAT 266B </option>
+            <option> STAT 266C </option>
+            <option> MATH 2 </option>
+            <option> MATH 2S </option>
+            <option> MATH 2T </option>
+            <option> MATH 3 </option>
+            <option> MATH 4 </option>
+            <option> MATH 11A </option>
+            <option> MATH 11B </option>
+            <option> MATH 19A </option>
+            <option> MATH 19B </option>
+            <option> MATH 20A </option>
+            <option> MATH 20B </option>
+            <option> MATH 21 </option>
+            <option> MATH 22 </option>
+            <option> MATH 23A </option>
+            <option> MATH 23B </option>
+            <option> MATH 24 </option>
+            <option> MATH 99 </option>
+            <option> MATH 99F </option>
+            <option> MATH 100 </option>
+            <option> MATH 101 </option>
+            <option> MATH 103A </option>
+            <option> MATH 103B </option>
+            <option> MATH 105A </option>
+            <option> MATH 105B </option>
+            <option> MATH 105C </option>
+            <option> MATH 106 </option>
+            <option> MATH 107 </option>
+            <option> MATH 110 </option>
+            <option> MATH 111A </option>
+            <option> MATH 111B </option>
+            <option> MATH 111T </option>
+            <option> MATH 114 </option>
+            <option> MATH 115 </option>
+            <option> MATH 116 </option>
+            <option> MATH 117 </option>
+            <option> MATH 118 </option>
+            <option> MATH 120 </option>
+            <option> MATH 121A </option>
+            <option> MATH 121B </option>
+            <option> MATH 124 </option>
+            <option> MATH 125 </option>
+            <option> MATH 128A </option>
+            <option> MATH 128B </option>
+            <option> MATH 129 </option>
+            <option> MATH 130 </option>
+            <option> MATH 134 </option>
+            <option> MATH 140 </option>
+            <option> MATH 145 </option>
+            <option> MATH 145L </option>
+            <option> MATH 148 </option>
+            <option> MATH 148L </option>
+            <option> MATH 152 </option>
+            <option> MATH 160 </option>
+            <option> MATH 161 </option>
+            <option> MATH 162 </option>
+            <option> MATH 181 </option>
+            <option> MATH 192 </option>
+            <option> MATH 194 </option>
+            <option> MATH 195 </option>
+            <option> MATH 199 </option>
+            <option> MATH 199F </option>
+            <option> MATH 200 </option>
+            <option> MATH 201 </option>
+            <option> MATH 202 </option>
+            <option> MATH 203 </option>
+            <option> MATH 204 </option>
+            <option> MATH 205 </option>
+            <option> MATH 206 </option>
+            <option> MATH 207 </option>
+            <option> MATH 208 </option>
+            <option> MATH 209 </option>
+            <option> MATH 210 </option>
+            <option> MATH 211 </option>
+            <option> MATH 212 </option>
+            <option> MATH 213A </option>
+            <option> MATH 213B </option>
+            <option> MATH 214 </option>
+            <option> MATH 215 </option>
+            <option> MATH 216 </option>
+            <option> MATH 217 </option>
+            <option> MATH 218 </option>
+            <option> MATH 219 </option>
+            <option> MATH 220A </option>
+            <option> MATH 220B </option>
+            <option> MATH 222A </option>
+            <option> MATH 222B </option>
+            <option> MATH 223A </option>
+            <option> MATH 223B </option>
+            <option> MATH 225A </option>
+            <option> MATH 225B </option>
+            <option> MATH 226A </option>
+            <option> MATH 226B </option>
+            <option> MATH 227 </option>
+            <option> MATH 228 </option>
+            <option> MATH 229 </option>
+            <option> MATH 232 </option>
+            <option> MATH 233 </option>
+            <option> MATH 234 </option>
+            <option> MATH 235 </option>
+            <option> MATH 238 </option>
+            <option> MATH 239 </option>
+            <option> MATH 240A </option>
+            <option> MATH 240B </option>
+            <option> MATH 246 </option>
+            <option> MATH 248 </option>
+            <option> MATH 249A </option>
+            <option> MATH 249B </option>
+            <option> MATH 249C </option>
+            <option> MATH 252 </option>
+            <option> MATH 254 </option>
+            <option> MATH 256 </option>
+            <option> MATH 260 </option>
+            <option> MATH 264 </option>
+            <option> MATH 280 </option>
+            <option> MATH 281 </option>
+            <option> MATH 282 </option>
+            <option> MATH 283 </option>
+            <option> MATH 284 </option>
+            <option> MATH 285 </option>
+            <option> MATH 286 </option>
+            <option> MATH 287 </option>
+            <option> MATH 288A </option>
+            <option> MATH 288B </option>
+            <option> MATH 292 </option>
+            <option> MATH 296 </option>
+            <option> MATH 297A </option>
+            <option> MATH 297B </option>
+            <option> MATH 297C </option>
+            <option> MATH 298 </option>
+            <option> MATH 299A </option>
+            <option> MATH 299B </option>
+            <option> MATH 299C </option>
+            <option> BME 5 </option>
+            <option> BME 18 </option>
+            <option> BME 21L </option>
+            <option> BME 22L </option>
+            <option> BME 23L </option>
+            <option> BME 51A </option>
+            <option> BME 51B </option>
+            <option> BME 55 </option>
+            <option> BME 80G </option>
+            <option> BME 80H </option>
+            <option> BME 94 </option>
+            <option> BME 94F </option>
+            <option> BME 99 </option>
+            <option> BME 99F </option>
+            <option> BME 105 </option>
+            <option> BME 110 </option>
+            <option> BME 118 </option>
+            <option> BME 122H </option>
+            <option> BME 123T </option>
+            <option> BME 128 </option>
+            <option> BME 128L </option>
+            <option> BME 129A </option>
+            <option> BME 129B </option>
+            <option> BME 129C </option>
+            <option> BME 130 </option>
+            <option> BME 132 </option>
+            <option> BME 140 </option>
+            <option> BME 160 </option>
+            <option> BME 163 </option>
+            <option> BME 175 </option>
+            <option> BME 177 </option>
+            <option> BME 177L </option>
+            <option> BME 178 </option>
+            <option> BME 180 </option>
+            <option> BME 185 </option>
+            <option> BME 188A </option>
+            <option> BME 188B </option>
+            <option> BME 188C </option>
+            <option> BME 193 </option>
+            <option> BME 193F </option>
+            <option> BME 194 </option>
+            <option> BME 194F </option>
+            <option> BME 195 </option>
+            <option> BME 195F </option>
+            <option> BME 198 </option>
+            <option> BME 198F </option>
+            <option> BME 199 </option>
+            <option> BME 201 </option>
+            <option> BME 205 </option>
+            <option> BME 215 </option>
+            <option> BME 218 </option>
+            <option> BME 229 </option>
+            <option> BME 230A </option>
+            <option> BME 230B </option>
+            <option> BME 232 </option>
+            <option> BME 237 </option>
+            <option> BME 263 </option>
+            <option> BME 272 </option>
+            <option> BME 273 </option>
+            <option> BME 275 </option>
+            <option> BME 278 </option>
+            <option> BME 280B </option>
+            <option> BME 281A </option>
+            <option> BME 281C </option>
+            <option> BME 281D </option>
+            <option> BME 281E </option>
+            <option> BME 281F </option>
+            <option> BME 281H </option>
+            <option> BME 281J </option>
+            <option> BME 281L </option>
+            <option> BME 281N </option>
+            <option> BME 281P </option>
+            <option> BME 281R </option>
+            <option> BME 281S </option>
+            <option> BME 281V </option>
+            <option> BME 281X </option>
+            <option> BME 281Z </option>
+            <option> BME 293 </option>
+            <option> BME 296 </option>
+            <option> BME 297A </option>
+            <option> BME 297B </option>
+            <option> BME 297C </option>
+            <option> BME 297F </option>
+            <option> BME 299A </option>
+            <option> BME 299B </option>
+            <option> BME 299C </option>
+            <option> BIOL 247 </option>
+            <option> SOCY 268A </option>
+            <option> SOCY 268B </option>
+        </datalist>
+
+        <!-- CONTAINERS -->
+        <div class="step-container">
+            <div class="step-box">
+                <img src="brown_bear.png" alt="bear1">
+                <h2>Find your school <br> and class</h2>
+                <p>Navigate and access a tailored list of resources compiled by students who have excelled in the same educational journey.</p>
+            </div>
+
+            <div class="step-box">
+                <img src="white_bear.png" alt="bear2">
+                <h2>Browse and contribute <br>your resources</h2>
+                <p>Contribute to this collective knowledge by sharing your own links or videos, enriching the resource pool for everyone.</p>
+            </div>
+    
+            <div class="step-box">
+                <img src="black_bear.png" alt="bear3">
+                <h2>Optimize your learning <br>experience</h2>
+                <p>Actively participate and contribute, you're not just a user; you're a crucial part of a dynamic learning ecosystem.</p>
+            </div>
+        </div>
+        <!-- FOOTERS -->
+        <footer>
+            <div class="footer-content">
+                <p>&copy; 2024 EduCollage. All rights reserved.</p>
+                <ul>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms of Service</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+                <div class="social-icons">
+                    <li><a href="https://www.instagram.com/"><ion-icon name="logo-instagram"></ion-icon></i></a></li>
+                    <li><a href="https://www.facebook.com/"><ion-icon name="logo-facebook"></ion-icon></i></a></li>
+                    <li><a href="https://www.linkedin.com/home"><ion-icon name="logo-linkedin"></ion-icon></i></a></li>
+                </div>
+            </div>
+        </footer>
+
+    </div>
+    <!-- Icons download -->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
+

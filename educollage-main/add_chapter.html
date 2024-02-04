@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Class Units/Lectures</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap">
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #DEDCFF;
+    margin: 0; /* Added to remove default body margin */
+    padding: 0; /* Added to remove default body padding */
+    font-family: 'Fredoka One', sans-serif;
+  }
+  .title {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+    margin-top: 20px; /* Added space between edge of the page and classTitle */
+  }
+  #container {
+    padding-top: 10px; /* Added space under the button */
+  }
+  #addSectionButton {
+    background-color: #613abd;
+    color: #DEDCFF;
+    border: none;
+    padding: 8px 16px; /* Increased padding for better button appearance */
+    cursor: pointer;
+    border-radius: 5px; /* Rounded out the button corners */
+    margin-bottom: 10px; /* Added space between button and section box */
+    margin-left: 10px; /* Added left margin */
+    margin-right: 10px; /* Added right margin */
+  }
+  .section {
+    background-color: #C0BDE6;
+    padding: 10px;
+    border-radius: 10px; /* Rounded out the section box corners */
+    margin-bottom: 10px; /* Added space between section boxes */
+    margin-left: 10px; /* Added left margin */
+    margin-right: 10px; /* Added right margin */
+  }
+  .section textarea {
+    width: 85%;
+    border: none;
+    outline: none;
+    resize: none;
+    font-size: 18px;
+    background-color: #eae8ff;
+    pointer-events: none; /* Make the textarea non-editable by default */
+    border-radius: 3px;
+
+  }
+  .rename-button,
+  .plus-button {
+    background-color: #3f2679;
+    color: #eae8ff;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 3px;
+    /* margin-right: 5px; */
+    margin-left: 10px; /* Added left margin */
+    margin-top: 5px;
+    margin-bottom: 10px;
+    /* margin-right: 5px; Added right margin */
+  }
+  .link-input {
+    margin-top: 5px;
+    border-radius: 4px;
+    margin-bottom: 10px;
+  }
+  .link-input input[type="text"] {
+    width: calc(100% - 50px);
+  }
+  .link-input button {
+    margin-top: 5px;
+    background-color: #3f2679;
+    color: #eae8ff;
+    border: none;
+    border-radius: 4px;
+    padding: 5px 10px;
+    cursor: pointer;
+  }
+  
+</style>
+</head>
+<body>
+<!-- HERE !!!-->
+<div class="title" id="classTitle">CSE 30</div>
+
+<!-- HERE!!! -->
+<div id="container">
+  <button id="addSectionButton">Add Unit/Lecture/Chapter</button>
+</div>
+
+<script>
+  var className = "CSE 30"; // Default class name
+
+  document.getElementById('classTitle').innerText = className;
+
+  document.getElementById('addSectionButton').addEventListener('click', addSection);
+
+  function addSection() {
+    const container = document.getElementById('container');
+    const section = document.createElement('div');
+    section.classList.add('section');
+
+    const textarea = document.createElement('textarea');
+    textarea.value = 'Untitled';
+    section.appendChild(textarea);
+
+    const renameButton = document.createElement('button');
+    renameButton.innerText = 'Rename';
+    renameButton.classList.add('rename-button');
+    renameButton.addEventListener('click', function() {
+      textarea.removeAttribute('pointer-events'); // Make textarea editable
+      textarea.focus();
+    });
+    section.appendChild(renameButton);
+
+    const plusButton = document.createElement('button');
+    plusButton.innerText = '+';
+    plusButton.classList.add('plus-button');
+    plusButton.addEventListener('click', addLinkInput);
+    section.appendChild(plusButton);
+
+    container.appendChild(section);
+  }
+
+  function addLinkInput() {
+    const parentSection = this.parentNode;
+
+    const linkInput = document.createElement('div');
+    linkInput.classList.add('link-input');
+
+    const input = document.createElement('input');
+    input.setAttribute('type', 'text');
+    input.placeholder = 'Enter link text';
+    linkInput.appendChild(input);
+
+    const addButton = document.createElement('button');
+    addButton.innerText = 'Add';
+    addButton.addEventListener('click', function() {
+      const text = input.value.trim();
+      if (text !== '') {
+        const linkListItem = document.createElement('li');
+        linkListItem.innerText = text
+        parentSection.appendChild(linkListItem);
+        input.value = '';
+      }
+    });
+    linkInput.appendChild(addButton);
+
+    parentSection.appendChild(linkInput);
+  }
+</script>
+</body>
+</html>
